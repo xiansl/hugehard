@@ -7,5 +7,7 @@ class HugeHard{
 	
 	public static void main(String[] args) {
 		System.out.println("HugeHard Trading System");
+		BaseApp app = new BetfairStreamApp();
+		app.test();
 	}
 }

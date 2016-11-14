@@ -2,15 +2,18 @@ package trading.marketdata;
 
 public abstract class Market {
 
-	private String name;
-	private String url;
+	private String marketname;
+	private String hostname;
+	int port;
 	
-	public Market(String marketName, String refUrl) {
-		name = marketName;
-		url = refUrl;
+	public Market(String name, String url, int rport) {
+		marketname = name;
+		hostname = url;
+		port = rport;
 	}
 	
-	public String getName() { return name; }
-	public String getUrl() { return url; }
+	public String getMarketname() { return marketname; }
+	public String getHostname() { return hostname; }
+	public int getPort() { return port; }
 
 }

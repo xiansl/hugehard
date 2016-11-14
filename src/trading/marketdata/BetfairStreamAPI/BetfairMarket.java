@@ -39,14 +39,11 @@ public class BetfairMarket extends Market {
     private BufferedReader reader;
     private BufferedWriter writer;
 
-
     private Long conflateMs;
     private Long heartbeatMs;
     
-	public BetfairMarket(String marketName, String refUrl, String hostName, int port, AppKeyAndSessionProvider sessionProvider) {
-		super(marketName, refUrl);
-		this.hostName = hostName;
-		this.port = port;
+	public BetfairMarket(String marketName, String hostName, int port, AppKeyAndSessionProvider sessionProvider) {
+		super(marketName, hostName, port);
 		this.sessionProvider = sessionProvider;
 	}
 	

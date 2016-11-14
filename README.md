@@ -1,7 +1,8 @@
 # hugehard
 
 Project Structure:
-- MarketData: Processing market data from exchange
-- Orders: Send orders to exchange
-- Strategy: Run a number of strategies over market data
-- Instruments
+- app: Entrance of trading system
+- marketdata: Processing market data from exchange
+- orders: Send orders to exchange
+- strategy: Run a number of strategies over market data
+- instruments: Classes of trading items

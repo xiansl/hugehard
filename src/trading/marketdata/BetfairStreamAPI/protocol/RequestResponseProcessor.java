@@ -18,5 +18,15 @@ public class RequestResponseProcessor {
     public static final String RESPONSE_ORDER_CHANGE_MESSAGE = "ocm";
     
     private AtomicInteger nextId = new AtomicInteger();
+    
+    private long lastRequestTime = Long.MAX_VALUE;
+    private long lastResponseTime = Long.MAX_VALUE;
+
+    private int traceChangeTruncation;
+    private Object sendLock = new Object();
+    
+    public RequestResponseProcessor() {
+    	
+    }
 	
 }

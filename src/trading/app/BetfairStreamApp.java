@@ -23,6 +23,7 @@ public class BetfairStreamApp extends BaseApp {
 	}
 	
 	public void test() {
+		System.out.println("Test begins.");;
 		try {
 			testInvalidHost();
 		} catch (Exception e) {

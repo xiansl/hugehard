@@ -48,7 +48,7 @@ public class AppKeyAndSessionProvider {
             }
         }
         System.out.println("SSO Login host={" + host + "}, appkey={" + appkey + "}, username={" + username + "}");
-        SessionDetails sessionDetails;
+        SessionDetails sessionDetails = null;
         try {
             String uri = String.format("https://%s/api/login?username=%s&password=%s", host, username, password);
 /*
